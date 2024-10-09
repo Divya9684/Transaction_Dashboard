@@ -1,0 +1,144 @@
+/* Overall page background */
+body {
+  background-color: #e1ebec; /* Light light blue */
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Heading style */
+.heading-container {
+  margin-top: -30px; /* Adjust as necessary */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 200px; /* Match the height of the circle */
+}
+
+.heading-container h1 {
+  background-color: white;
+  padding: 20px; /* Adjust padding for better fit */
+  border-radius: 50%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Add flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Full height of the parent */
+  width: 20%; /* Full width of the parent */
+}
+
+/* Search bar and select box container */
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input, .form-select {
+  width: 20%; /* Same width for both */
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Search bar styling */
+.search-input {
+  background-color: #ffe7c2; 
+  border-radius: 50px;
+  border: 1px solid #ccc; 
+  transition: background-color 0.3s; 
+  outline: 3px solid rgb(233, 191, 112); 
+}
+
+/* Lighter background on focus */
+.search-input:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Keep placeholder visible */
+.search-input::placeholder {
+  color: #555; /* Change to your desired placeholder color */
+  opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+/* Dropdown styling */
+.form-select {
+  background-color: #ffcc80; /* Light orange */
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Maintain border color */
+}
+
+/* Custom dropdown caret styling */
+.form-select::after {
+  background-color: rgb(255, 209, 122); /* Background color for the dropdown caret */
+  color: orange; /* Color for the dropdown caret */
+  border: #f39e1f;
+}
+
+/* Custom styles for dropdown options */
+.form-select option {
+  background-color: white; /* Background color for options */
+  color: black; /* Text color for options */
+}
+
+/* Table Styling */
+.table-container {
+  margin-top: 30px;
+  background-color: #ffebc1; /* Light light orange */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse; /* Change to collapse for borders to be managed more easily */
+  border-spacing: 0;
+  border: none; /* Remove outer border */
+}
+
+/* Adjust individual table cells */
+.table-container th, .table-container td {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #ffebc1;
+  border-left: 2px solid black; /* Keep left border */
+  border-right: 2px solid black; /* Keep right border */
+}
+
+/* Remove top and bottom borders */
+.table-container th, .table-container td {
+  border-top: none; /* Remove top border */
+  border-bottom: none; /* Remove bottom border */
+}
+
+/* Add specific styles for the first and last cells to remove their left and right borders */
+.table-container th:first-child, .table-container td:first-child {
+  border-left: none; /* Remove left border for the first cell */
+}
+
+.table-container th:last-child, .table-container td:last-child {
+  border-right: none; /* Remove right border for the last cell */
+  border-bottom: none; /* Remove bottom border for the last cell */
+}
+
+/* Keep middle borders */
+.table-container td {
+  border-top: 1px solid black; /* Keep top border for middle cells */
+}
+
+/* Specific rule to remove bottom border of the last cell */
+.table-container td:last-child {
+  border-bottom: none; /* Remove bottom border of the last cell */
+}
